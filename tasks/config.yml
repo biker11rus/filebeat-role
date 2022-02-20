@@ -1,0 +1,22 @@
+---
+- name: Configure filebeat
+  become: true
+  template:
+    src: filebeat.yml.j2
+    dest: /etc/filebeat/filebeat.yml
+  notify: restart filebeat
+- name: Set filebeat systemwork
+  become: true
+  command:
+    chdir: /usr/share/filebeat/bin
+    cmd: filebeat modules enable system
+  register: filebeat_modules
+  changed_when: filebeat_modules.stdout != "Module system is already enabled"
+- name: Load Kibana Dash
+  become: true
+  command:
+    chdir: /usr/share/filebeat/bin
+    cmd: filebeat setup
+  register: filebeat_setup
+  changed_when: false
+  until: filebeat_setup is succeeded

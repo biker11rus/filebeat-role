@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Ruslan Khozyainov
+  description: filebeat role installation
+  license: etc
+  min_ansible_version: 2.1
+  role_name: filebeat-role
+  platforms:
+    - name: Ubuntu
+      versions:
+      - all
+    - name: CentOS
+      versions:
+      - all
+  galaxy_tags: []
