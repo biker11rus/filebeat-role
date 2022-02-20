@@ -1,4 +1,4 @@
-Kibana role
+Filebeat role
 =========
 
 Роль для установки filebeat на хостах с ОС: Debian, Ubuntu, CentOS, RHEL.
