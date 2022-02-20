@@ -3,7 +3,8 @@ galaxy_info:
   description: filebeat role installation
   license: etc
   min_ansible_version: 2.1
-  role_name: filebeat-role
+  role_name: filebeat_role
+  namespace: rkh_netology
   platforms:
     - name: Ubuntu
       versions:
