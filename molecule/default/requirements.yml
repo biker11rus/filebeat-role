@@ -1,6 +1,6 @@
 ---
 - name: elasticsearch
-  src: git@github.com:netology-code/mnt-homeworks-ansible.git
+  src: git@github.com:biker11rus/elastic_role.git
   scm: git
 - name: kibana_role
   src: git@github.com:biker11rus/kibana-role.git

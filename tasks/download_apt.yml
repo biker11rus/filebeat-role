@@ -1,7 +1,7 @@
 ---
 - name: "Download filebaet's deb"
   get_url:
-    url: "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-{{ filebeat_version }}-amd64.deb"
+    url: "https://mirror.yandex.ru/mirrors/elastic/7/pool/main/f/filebeat/filebeat-{{ filebeat_version }}-amd64.deb"
     dest: "/tmp/filebeat-{{ filebeat_version }}-amd64.deb"
     mode: 0755
     validate_certs: false
