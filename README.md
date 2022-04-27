@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: all
       roles:
-         - { role: filebeat-role }
+         - { role: filebeat_role }
          - 
 
 License
